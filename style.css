@@ -1,0 +1,11 @@
+body,
+ul {
+    margin: 0;
+}
+
+.button {
+    width: 285px;
+    height: 80px;
+    background-color: #D89999;
+    border-radius: 40px;
+}
