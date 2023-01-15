@@ -1,6 +1,3 @@
-/* Добавить шрифты */
-
-
 body,
 ul {
     margin: 0;
@@ -8,6 +5,7 @@ ul {
 
 ul {
     list-style-type: none;
+    padding: 0;
 }
 
 body {
@@ -47,7 +45,7 @@ p {
 }
 
 .hidden {
-    visibility: hidden;
+    display: none;
 }
 
 .navigation {
@@ -70,12 +68,9 @@ nav ul {
 }
 
 main div {
-    width: 1200px;
     margin-left: auto;
     margin-right: auto;
 }
-
-
 
 a, 
 a:active,
@@ -85,7 +80,12 @@ a:hover {
 }
 
 .button a {
+    display: inline-block;
     color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
 }
 
 .button {
@@ -93,21 +93,199 @@ a:hover {
     height: 80px;
     background-color: #D89999;
     border-radius: 40px;
+    margin-top: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .catalog {
     display: flex;
+    justify-content: space-between;
     align-items: flex-start;
+    width: 1200px;
+    margin-top: 80px;
+    margin-bottom: 48px;
+    text-align: left;
+    height: 462px;
+}
+
+.ctg-1 h1 {
+    margin: 0;
+}
+
+.ctg-1 p {
+    margin: 0;
+    margin-top: 24px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
 }
 
 .ctg-2 {
     align-self: flex-end;
+    margin-right: 20px;
+}
+
+.benefits ul{
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 80px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.benefit {
+    display: flex;
+    justify-content: space-between;
+}
+
+.img-b {
+    width: auto;
+    height: 52px;
+}
+
+.text-b {
+    width: 285px;
+    text-align: left;
+    margin: 0;
+    margin-left: 20px;
+}
+
+.text-b:nth-child(2) {
+    width: 285px;
+    text-align: left;
+    margin: 0;
+    margin-left: 29px;
+}
+
+.text-b .thick {
+    margin: 0;
+}
+
+.text-b .thin {
+    margin-top: 8px;
+}
+
+.popular {
+    width: 794px;
+    margin-top: 40px;
+    margin-bottom: 0;
+}
+
+.popular h2 {
+    margin: 0 auto;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: repeat(2, 387px);
+    grid-template-areas: "first-area second-area"
+                         "button second-area";
+    gap: 20px;
+    row-gap: 0;
+    margin-top: 36px;
+    margin-bottom: 24px;
+}
+
+.first-area {
+    grid-area: first-area;
+    width: 387px;
+    text-align: left;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 20px;
+}
+
+.first-area p {
+    margin-top: 0;
+    margin-bottom: 24px;
+}
+
+.first-area p:nth-child(4) {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 0;
+}
+
+.card .button {
+    grid-area: button;
+    margin: 0;
+}
+
+.second-area {
+    width: 387px;
+    grid-area: second-area;
+}
+
+.turn {
+    margin-top: 0;
+    margin-bottom: 80px;
+    width: 387px;
+}
+
+.chose {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 0 auto 80px;
+    width: 1200px;
+}
+
+.chose-card-1 {
+    background-image: linear-gradient(to top, rgba(174, 124, 120, 0.6), rgba(174, 124, 120, 0.6)), url(img/sammi-sP5CaWEN7Do-unsplash.png);
+    border-radius: 10px;
+    background-repeat: no-repeat, no-repeat;
+    background-size: cover, contain;
+    height: 442px;
+    width: auto;
+    margin: 0;
+}
+
+.chose-card-2 {
+    background-image: linear-gradient(to top, rgba(174, 124, 120, 0.6), rgba(174, 124, 120, 0.6)), url(img/fresh-beautiful-peony-flowers-vase.png);
+    border-radius: 10px;
+    background-repeat: no-repeat, no-repeat;
+    background-size: cover, contain;
+    height: 442px;
+    margin: 0;
+}
+
+.chose-card-3 {
+    background-image: linear-gradient(to top, rgba(174, 124, 120, 0.6), rgba(174, 124, 120, 0.6)), url(img/alyssa-strohmann-tnpr-hPOta0-unsplash.png);
+    border-radius: 10px;
+    background-repeat: no-repeat, no-repeat;
+    background-size: cover, contain;
+    height: 442px;
+    margin: 0;
+}
+
+.h2 {
+    margin-top: 183px;
+    margin-bottom: 0;
+    color: #FFFFFF;
+}
+
+.description {
+    color: #FFFFFF;
+    margin-top: 8px;
 }
 
 .sale {
     display: grid;
+    height: 391px;
+    width: 1200px;
     grid-template-columns: auto 590px;
     background-color: #AE7C78;
+    margin-bottom: 80px;
 }
 
 .s-1 {
@@ -116,19 +294,56 @@ a:hover {
     margin-top: 40px;
     margin-left: 102px;
     margin-bottom: 64px;
+    text-align: left;
+}
+
+.s-1 h2 {
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 59px;
+    margin-top: 0;
+    margin-bottom: 24px;
+}
+
+.s-1 p {
+    width: 387px;
+    height: 145px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    margin-top: 0;
 }
 
 .s-2 {
     margin: 0;
+    width: 590px;
 }
 
+.four-steps {
+    width: 1200px;
+}
 
+.four-steps ul {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+    padding-left: 0;
+}
 
+.four-steps h2 {
+    margin: 0;
+}
 
+.step {
+    text-align: center;
+    width: 285px;
+    margin-top: 36px;
+}
 
 .feedback {
     border: 1px solid #AE7C78;
     margin-bottom: 80px;
+    width: 1200px;
 }
 
 .feedback h2 {
@@ -161,6 +376,10 @@ a:hover {
     height: auto;
     padding-top: 52px;
     padding-bottom: 72px;
+}
+
+.container-contacts {
+    width: 1200px;
 }
 
 .contacts {
